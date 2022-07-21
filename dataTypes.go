@@ -31,4 +31,6 @@ func main(){
 	fmt.Println(mustang)
 	fmt.Println(mustang.engine)
 
+	mapsTest()
+
 }

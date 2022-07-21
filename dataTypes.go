@@ -1,4 +1,6 @@
 package main
+
+//import packages
 import "fmt"
 
 func main(){
@@ -17,11 +19,20 @@ func main(){
 	var nums [3]int;
 	fmt.Println(nums[1])
 
+	//arrays
 	fabonacci := [5]int{0,1,1,2,3}
 
 	fmt.Println(fabonacci)
 	fmt.Println(len(fabonacci))
 
+	//slices 
+	odd := []int{1,3,5,7,9}
+	oddSlice := odd[2:]
+	oddSlice = append(oddSlice, 11)
+	fmt.Println(odd)
+	fmt.Println(oddSlice, len(oddSlice))
+
+	//structs
 	type car struct{
 		engine string
 		hp int
@@ -32,5 +43,6 @@ func main(){
 	fmt.Println(mustang.engine)
 
 	mapsTest()
+	rangeTest()
 
 }

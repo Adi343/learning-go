@@ -44,5 +44,6 @@ func main(){
 
 	mapsTest()
 	rangeTest()
+	fileTest()
 
 }
